@@ -1,0 +1,185 @@
+@import "../../style/Accordion.css";
+
+#intro {
+  color: #ff6060;
+  margin-top: 2%;
+}
+
+#intro-title {
+  font-size: 18px;
+  line-height: 142.6%;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 90%;
+}
+
+#intro-location {
+  font-size: 14px;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+#tags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.tag {
+  font-size: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ff6060;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+#host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+#host-stars {
+  width: 24%;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  margin-right: 2%;
+}
+
+.star-red {
+  fill: #ff6060;
+}
+
+.star-grey {
+  fill: #e3e3e3;
+}
+
+
+#host-info {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+#host-info-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+#host-info-name {
+  font-size: 12px;
+  margin: 0 10% 0 0;
+  text-align: right;
+}
+
+/*  Version tablette entre 768px et 1200px  */
+@media screen and (min-width: 768px) {
+  #intro {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+  }
+
+  #intro-title {
+    width: 100%;
+  }
+
+  #tags {
+    display: flex;
+    width: 100%;
+  }
+
+  .tag {
+    border-radius: 10px;
+    width: 145px;
+    padding: 5px;
+  }
+
+  #host {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    width: 15%;
+    margin: 0;
+  }
+
+  #host-stars {
+    text-align: right;
+  }
+
+  #host-stars,
+  #host-info {
+    width: 100%;
+  }
+}
+
+/* Version desktop à partir de 1200px  */
+@media screen and (min-width: 1280px) {
+  #intro-title {
+    font-size: 36px;
+  }
+
+  #intro-location {
+    font-size: 18px;
+    margin-top: 1%;
+  }
+
+  #tags {
+    width: 100%;
+  }
+
+  .tag {
+    font-size: 14px;
+  }
+
+  #host {
+    width: 14%;
+  }
+
+  .star {
+    width: 30px;
+    height: 30px;
+  }
+
+  #host-info-picture {
+    width: 64px;
+    height: 64px;
+  }
+
+  #host-info-name {
+    font-size: 18px;
+  }
+
+  #housing-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .housing-info-details {
+    width: 45%;
+    margin-bottom: 0;
+  }
+
+  .housing-info-title,
+  .housing-info-text {
+    font-size: 18px;
+    border-radius: 10px;
+  }
+
+  .housing-info-title {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .housing-info-text {
+    padding-top: 6%;
+    padding-bottom: 5%;
+  }
+}

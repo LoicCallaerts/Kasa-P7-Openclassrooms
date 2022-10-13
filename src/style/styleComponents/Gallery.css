@@ -1,0 +1,75 @@
+#gallery {
+  position: relative;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 255px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.gallery-image-number {
+  display: none;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  position: absolute;
+  top: 45%;
+  font-size: 24px;
+  color: #ffffff;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  filter: drop-shadow(8px 8px 20px #0202022a);
+}
+
+.fa-chevron-left {
+  left: 2%;
+}
+
+.fa-chevron-right {
+  right: 2%;
+}
+
+/*  Version tablette entre 768px et 1200px  */
+@media screen and (min-width: 768px) {
+  .gallery-image-number {
+    display: block;
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    color: #f3f3f3;
+    top: 85%;
+    left: 50%;
+  }
+}
+
+/* Version desktop à partir de 1200px  */
+@media screen and (min-width: 1280px) {
+  .gallery-image {
+    height: 415px;
+    border-radius: 25px;
+  }
+
+  .gallery-image-number {
+    font-size: 18px;
+    top: 88%;
+    left: 49%;
+  }
+
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 90px;
+    top: 35%;
+  }
+
+  .fa-chevron-left {
+    left: 1%;
+  }
+
+  .fa-chevron-right {
+    right: 1%;
+  }
+}

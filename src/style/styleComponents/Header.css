@@ -1,0 +1,48 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-logo {
+    width: 145px;
+    height: 47px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    height: 17px;
+}
+
+.nav-link, .nav-link-active{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FF6060;
+    text-decoration: none;
+}
+
+.nav-link-active{
+    text-decoration: underline;
+}
+
+
+/* Version desktop à partir de 1200px  */
+@media screen and (min-width: 1280px)
+    {
+    #header-logo {
+        width: 210px;
+        height: 68px;
+    }
+
+    nav {
+        width: 250px;
+        height: 34px;
+    }
+
+    .nav-link, .nav-link-active{
+        font-size: 24px;
+        text-transform: capitalize;
+    }
+}

@@ -1,0 +1,29 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    margin: 0;
+}
+
+header, main {
+    margin: 20px;
+}
+
+header{
+    margin-bottom: 0;
+}
+
+main{
+    margin-top: 10px;
+}
+
+
+/* Version desktop à partir de 1200px  */
+@media screen and (min-width: 1280px)
+{    
+    header, main {
+        margin: 40px 100px 30px 100px;
+    }
+}

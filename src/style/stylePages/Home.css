@@ -1,0 +1,117 @@
+#title {
+    position : relative; 
+    width: 100%;
+    height: 111px; 
+}
+
+#title-bannerS {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+#title-bannerXL{
+    display: none;
+}
+
+#title-bg{
+    background-color: #000000;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform: translate(-0%, -104%);
+}
+
+#title-home{
+    color:  #FFFFFF;
+    position : absolute;
+    font-size: 24px;
+    width: 65%;
+    top: 20%;
+    left: 10%;
+    transform: translate(-10%, -20%);
+}
+
+#housing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.housing-link{
+    text-decoration: none;
+}
+
+/*  Version tablette entre 768px et 1200px  */
+@media screen and (min-width: 768px) 
+{
+    #title-bannerXL {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px; 
+    }
+
+    #title-bannerS {
+        display: none;
+    }
+
+    #title-bg{
+        border-radius: 25px;
+        transform: translate(-0%, -101%);
+    }
+
+    #title-home{
+        text-align: center;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+
+    #housing{
+        background-color: #F6F6F6;        ;
+        border-radius: 25px;
+        padding-bottom: 30px;
+    }
+}
+
+/*  Version tablette entre 768px et 1200px  */
+@media screen and (min-width: 768px) {
+
+    #housing{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        padding-bottom: 60px;
+    }
+}
+
+
+
+/* Version desktop à partir de 1200px  */
+@media screen and (min-width: 1280px)
+{
+    #title {
+        margin-top: 63px; 
+        margin-bottom: 43px;
+        height: 223px; 
+    }
+
+    #title-home{
+        font-size: 48px;
+    }
+
+    #housing{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 1%;
+        justify-items: center;
+        padding-bottom: 60px;
+    }
+}

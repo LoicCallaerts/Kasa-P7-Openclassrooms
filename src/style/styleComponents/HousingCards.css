@@ -1,0 +1,44 @@
+.housing-card{
+    width: 335px;
+    height: 255px;
+    margin-top: 6%;
+}
+
+.housing-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.housing-card h2{
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FFFFFF;
+    background-color: #0202022a;
+    height: 52px;
+    margin: 0 20px 0 20px;
+    top: 100%;
+    left: 0%;
+    transform: translate(-0%, -115%);
+}
+
+/* Version desktop à partir de 1200px  */
+@media screen and (min-width: 1280px)
+{
+
+    .housing-card{
+        width: 400px;
+        height: 400px;
+        margin-top: 15%;
+    }
+
+    .housing-card h2{
+        transform: translate(-0%, -125%);
+    }
+
+    .housing-card:hover {
+        transform: scale(1.15);
+    }
+    
+}

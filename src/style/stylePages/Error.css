@@ -1,0 +1,61 @@
+#error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF6060;
+    margin-top: 195px;
+}
+
+#error span {
+    font-size: 96px;
+    font-weight: 700;
+}
+
+#error-text{
+    text-align: center;
+    font-size: 18px;
+    width: 260px;
+    margin: 0;
+}
+
+#error-link{
+    font-size: 14px;
+    color: #FF6060;
+    margin-top: 40%;
+    margin-bottom: 20%;
+}
+
+/*  Version tablette entre 768px et 1200px  */
+@media screen and (min-width: 768px) 
+{
+    #error{
+        margin-top: 10%;
+    }
+
+    #error-text{
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    #error-link{
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+}
+
+/* Version desktop à partir de 1200px  */
+@media screen and (min-width: 1280px) 
+{
+    #error span {
+        font-size: 288px;
+    }
+
+    #error-text{
+        font-size: 36px;
+    }
+
+    #error-link{
+        font-size: 18px;
+    }
+}
